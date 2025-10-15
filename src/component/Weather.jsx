@@ -67,11 +67,11 @@ const Weather = () => {
 
   return (
     <>
-      <div className='weather flex flex-col items-center w-92 lg:w-sm sm:w-sm bg-cyan-900 m-10 mt-20 rounded-3xl p-5 place-self-center shadow-2xl shadow-cyan-400 opacity-70 mix-blend-multiply'>
+      <div className='weather flex flex-col items-center lg:w-sm h[70vh] w-[40vh] bg-cyan-900 m-10 mt-20 rounded-3xl p-5 place-self-center shadow-2xl shadow-cyan-400  mix-blend-normal'>
 
         <div className="search-bar flex items-center gap-4 ">
-          <input className='search-input h-[40px] border-none outline-none rounded-md pl-5 text-blue-950 bg-white text-2xl' ref={inputRef} type="text" placeholder='Search' />
-          <button onClick={() => search(inputRef.current.value) } className='search-icon bg-white text-cyan-900 rounded-md text-2xl font-bold cursor-pointer hover:bg-cyan-800 hover:text-white p-2 m-1'><IoSearch /></button>
+          <input className='search-input lg:h-[40px] lg:w-auto h-[40px] w-[180px]  border-none outline-none lg:rounded-md rounded-full pl-5 text-blue-950 bg-white text-2xl' ref={inputRef} type="text" placeholder='Search' />
+          <button onClick={() => search(inputRef.current.value) } className='search-icon bg-white text-cyan-900 lg:rounded-md rounded-full text-2xl font-bold cursor-pointer hover:bg-cyan-800 hover:text-white p-2 m-1'><IoSearch /></button>
         </div>
 
         {weatherData ? <>
