@@ -67,7 +67,7 @@ const Weather = () => {
 
   return (
     <>
-      <div className='weather flex flex-col items-center bg-cyan-900 m-10 mt-20 rounded-3xl p-5 place-self-center shadow-2xl shadow-cyan-400 opacity-70 mix-blend-multiply'>
+      <div className='weather flex flex-col items-center w-92 lg:w-sm sm:w-sm bg-cyan-900 m-10 mt-20 rounded-3xl p-5 place-self-center shadow-2xl shadow-cyan-400 opacity-70 mix-blend-multiply'>
 
         <div className="search-bar flex items-center gap-4 ">
           <input className='search-input h-[40px] border-none outline-none rounded-md pl-5 text-blue-950 bg-white text-2xl' ref={inputRef} type="text" placeholder='Search' />
